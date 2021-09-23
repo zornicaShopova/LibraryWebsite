@@ -1,0 +1,106 @@
+body{
+font-family: monospace;
+background-color: #ffe8d6;
+font-size: large;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*----------------------------------*/
+
+.container{
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.656);
+    height: 100%;
+    width: 100%;  
+}
+
+.texts{
+    margin-top: 100px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(90, 9, 9);
+    font-size: 50px;
+}
+
+p{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.alert{
+    text-align: center;
+    padding: 10px;
+    background-color: #ccd5ae;
+    color: rgb(104, 101, 101);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    display: none;
+    
+    
+}
+
+#form{
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    height: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('../images/flower.jpg');
+    background-position: center;
+   
+}
+
+input[type=text],input[type=email],input[type=password]{
+    width: 50%;
+    height: 10px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.656);
+}
+
+#firstName{
+    margin-top: 25px;
+}
+
+
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+#register_btn{
+    background-color: #999987;
+    font-size: medium;
+    color:whitesmoke;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    cursor:pointer;
+    padding: 10px;
+    width: 50%;
+    border-radius: 15px;
+    opacity: 0.9;
+
+}
+
+#button_paragraph{
+    margin: 0px;
+}
+
+#register_btn:hover{
+    opacity: 1;
+}
+

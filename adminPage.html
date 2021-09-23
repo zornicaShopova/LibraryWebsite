@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style/style_adminPage.css">
+
+    <script>
+       
+        function preventBack(){
+            window.history.forward();
+        }
+        preventBack();
+      </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="bg_title">
+            <p id="titlePage">ADMIN PANEL</p>
+        </div>
+
+        <!-- section : nav bar  -->
+        <div class="navBar">
+            <ul>
+                <li><a href="#addingBooks">add books</a></li>
+                <li><a href="#tableReservations">check reservations</a></li>
+                <li><a href="#addedBooks">all books </a></li>
+                <li><a href="#" id="signout">logout</a></li>
+            </ul>
+        </div>
+
+        <div class="div">
+            <p style="text-align: center;">This is the administration panel.<br />Here you can add, edit, remove books,
+                reservations and users.</p>
+        </div>
+
+        <!-- section : ADD books  -->
+
+        <div>
+            <p id="addingBooks">ADD BOOKS</p>
+        </div>
+
+        <form id="submitBook">
+            <label>TITLE :</label>
+            <input type="text" id="bookTitle" placeholder="Write...">
+            <br />
+            <label>AUTHOR :</label>
+            <input type="text" id="bookAuthor" placeholder="Write...">
+            <br />
+            <label>BARCODE :</label>
+            <input type="text" id="barcode" placeholder="Write...">
+            <br />
+            <label>DATE :</label>
+            <input type="text" id="date" placeholder="yyyy-mm-dd">
+            <br />
+            <label>IMAGE :</label>
+            <input type="text" id="image" placeholder="Write...URL">
+            <br />
+            <label>RATE :</label>
+            <input type="text" id="rate" placeholder="Write... 1-10">
+            <br />
+       
+
+            <div class="div">
+                <button id="addBtn">submit</button>
+            </div>
+            <hr>
+        </form>
+
+            <!-- section : CHECK reservation -->
+
+            <p id="tableReservations">RESERVATIONS</p>
+            <div class="div">
+                <table class="tableReserv" id="tableReserv">
+                    <thead id="reservTable">
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>PICKUP DATE</th>
+                        <th>RETURN DATE</th>
+                    </thead>
+                    <tbody id="bodyTable">
+                      
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- section : library  -->
+
+            <hr>
+            <div class="listOfBooks">
+
+                <p id="addedBooks">BOOKS LIBRARY</p>
+
+                <table id="bookTable">
+                    <thead>
+                        <th>BOOK TITLE</th>
+                        <th>BOOK AUTHOR</th>
+                        <th>PUBLISHED DATE</th>
+                        <th>BARCODE</th>
+                        <th>RATE</th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+        
+    <!-- section modal 1   -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+
+            <input class="inputFields" type="text" id="titleB" placeholder="Book title">
+            <input class="inputFields" type="text" id="authorB" placeholder="Book author">
+            <input class="inputFields" type="text" id="dateB" placeholder="Book date">
+            <input class="inputFields" type="text" id="barcodeB" placeholder="Book barcode">
+            <input class="inputFields" type="text" id="rateB" placeholder="Book rate">
+
+            <button id="editBtn">Edit</button>
+            <button id="deleteBtn">Delete</button>
+        </div>
+    </div>
+
+    <!-- section modal 2   -->
+    <div class="modal2">
+        <div class="modal-content">
+            <div class="close2">+</div>
+
+            <input class="inputFields" type="text" id="tB" placeholder="Book title">
+            <input class="inputFields" type="text" id="aB" placeholder="Book author">
+            <input class="inputFields" type="text" id="pickupDate" placeholder="Pick up date">
+            <input class="inputFields" type="text" id="returnDate" placeholder="Return date">
+
+            <button id="saveBtn" onclick="saveReservation()">Save</button>
+            <button id="deleteBtn">Delete</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="functionaliy/getBooks.js"></script>
+    <script src="functionaliy/addBookData.js"></script>
+    <script src="functionaliy/getReservations.js"></script>
+</body>
+
+</html>

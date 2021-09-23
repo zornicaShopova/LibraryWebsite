@@ -1,0 +1,99 @@
+body{
+    font-family:  monospace;
+    font-size: large;
+    background-color: #ffe8d6;
+    }
+    *{
+        box-sizing: border-box;
+    }
+/*----------------------------------*/
+
+    .container{
+        padding: 16px;
+        background-color: rgba(255, 255, 255, 0.656);
+        height: 100%;
+        width: 100%;
+    }
+
+    .texts{
+        margin-top: 100px;
+    }
+
+    h1{
+        text-align: center;
+        color: rgb(90, 9, 9);
+        font-size: 50px;
+    }
+    
+    p{
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 35px;
+    }
+
+    form{
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        width: 30%;
+        height: 40%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('../images/pinkflower.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+        
+    }
+
+    .divForm1{
+        margin-top: 60px;
+    }
+
+    .divForm2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    input[type=email],input[type=password]{
+        height: 10px;
+        padding: 15px;
+        width: 50%;
+        display: inline-block;
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.656);
+    }
+
+
+    .text{
+        font-size: 12px;
+        padding-right: 20px;
+    }
+
+    button{
+        background-color: #6b705c;
+        color: whitesmoke;
+        font-size: medium;
+        border: none;
+        font-family: 'Courier New', Courier, monospace;
+        cursor:pointer;
+        padding: 10px ;
+        margin-top: 30px;
+        border-radius: 15px;
+        opacity: 0.9;
+        width: 50%;
+        
+    }
+
+    button:hover{
+        color:black;
+        opacity: 1;
+    }
+  
+
+  
+
+

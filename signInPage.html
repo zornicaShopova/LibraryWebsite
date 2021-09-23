@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Sign IN Page</title>
+    <link rel="stylesheet" href="style/style_signIn.css">
+
+
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="texts">
+            <h1>SIGN IN </h1>
+            <p>Please sign in to your account!</p>
+        </div>
+
+        <form id="loginForm" onsubmit="signIn(event)">
+            <div class="divForm1">
+                <input type="email" id="emailSignIn" placeholder="Email">
+                <br>
+            </div>
+            <div class="divForm2">
+                <input type="password" id="passwordSignIn" placeholder="Password">
+                <br />
+            </div>
+            <div>
+                <button>Sign In</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-auth.js"></script>
+    <script src="functionaliy/signIn.js"></script>
+
+
+</body>
+
+</html>
